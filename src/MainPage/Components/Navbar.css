@@ -1,0 +1,108 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* padding: 10px; */
+    position: relative;
+}
+
+.logo img{
+    width: 30%;
+    margin-left: 20px;
+    /* height: 40%; */
+    border-radius: 50px;
+}
+
+.menu {
+    display: flex;
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+    padding: 5px;
+    cursor: pointer;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li:hover {
+    color: #007BFF;
+}
+
+.menu li.active {
+    border-bottom: 2px solid #00eeff;
+}
+
+.buttons {
+    display: flex; 
+}
+
+.buttons button {
+    margin-left: 10px;
+    padding: 10px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    background-color: #1cd6a8;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #00b3b0;
+}
+
+/* Responsive Styles */
+.toggle-button {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px; /* Adjust based on navbar height */
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 10;
+        max-height: 0; /* Start closed */
+        transition: max-height 0.3s ease-in-out;
+    }
+
+    .menu.open {
+        max-height: 300px; /* Set a height that accommodates the menu items */
+    }
+
+    .menu ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .buttons {
+        display: none; /* Hide buttons on mobile */
+    }
+
+    .toggle-button {
+        display: block; /* Show toggle button on mobile */
+    }
+}

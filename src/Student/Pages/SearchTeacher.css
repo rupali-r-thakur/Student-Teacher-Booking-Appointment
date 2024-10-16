@@ -1,0 +1,67 @@
+.search-teacher-container {
+    max-width: 110%;
+    padding: 30px;
+    margin-left: -21px;
+    font-family: 'Arial', sans-serif;
+    overflow-y: auto; 
+    max-height: calc(100vh - 80px); 
+}
+
+.search-teacher-container h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #3498db; 
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    border-color: #2980b9; 
+    outline: none; 
+}
+
+.teacher-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+}
+
+.teacher-card {
+    background-color: #ecf0f1; 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.teacher-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.teacher-name {
+    font-size: 1.5rem;
+    color: #34495e; 
+    margin: 0 0 5px 0;
+}
+
+.teacher-subject {
+    font-size: 1rem;
+    color: #7f8c8d; 
+}
+
+.no-teachers {
+    text-align: center;
+    color: #e74c3c; 
+    font-weight: bold;
+    margin-top: 20px;
+}

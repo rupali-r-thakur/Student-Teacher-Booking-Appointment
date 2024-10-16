@@ -1,0 +1,85 @@
+.dashboard {
+    padding: 6px;
+    background-color: #f4f4f4;
+  }
+  
+  .dashboard h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .card p {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #16a085;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .info-section {
+    margin-top: 40px;
+  }
+  
+  .info-section h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #34495e;
+    color: #ecf0f1;
+  }
+  
+  .info-section {
+    max-height: 300px;
+    overflow-y: auto; 
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1c40f;
+  }
+  
+  
